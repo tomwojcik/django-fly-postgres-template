@@ -176,7 +176,7 @@ DATABASES = {
 
 # good practice. Remove if you can't meet the criteria
 if not IS_DEV_ENV:
-    DATABASES['default']['OPTIONS'] = {'sslmode': 'require'},
+    DATABASES['default']['OPTIONS'] = {'sslmode': 'require'}
 
 
 
