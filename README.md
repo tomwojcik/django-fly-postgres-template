@@ -17,7 +17,7 @@ Last I checked, Jinja2 didn't work well with Python3.11. Use any lower Python ve
 
 ```shell
 $ pip install -U cookiecutter jinja2
-$ cookiecutter gh:tomwojcik/django-fly-sqlite-template
+$ cookiecutter gh:tomwojcik/django-fly-postgres-template
 ```
 
 Give it a proper name
