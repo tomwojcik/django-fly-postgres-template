@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 720" style="enable-background:new 0 0 1280 720;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{opacity:0.5;}
+	.st2{fill:#409cff;}
+	.st3{fill:url(#pattern);}
+	.st4{fill:#409cff;}
+</style>
+<pattern id='pattern' x='0' y='0' width='30' height='30' viewBox='0 0 4 4' patternUnits='userSpaceOnUse'>
+    <path class='st2' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z' />
+</pattern>
+<path class="st3" d="M0,0v720h1280V0H0z M993,569H287V151h706V569z"/>
+<path class="st4" d="M439.6,481.9c0,0-0.3,0.3-0.6,1.2h402l0,0L703.8,296.2c0,0-16.3-22.2-32.7,0l-84.7,115.6l-31.2-42.3
+	c0,0-16.3-22.2-32.7,0L439.6,481.9z"/>
+<path class="st4" d="M516.7,270.8c0-18.7-14.9-33.9-33.6-33.9s-33.6,14.9-33.6,33.9s14.9,33.9,33.6,33.9S516.7,289.5,516.7,270.8"/>
+</svg>

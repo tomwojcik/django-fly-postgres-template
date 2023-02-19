@@ -1,0 +1,12 @@
+gunicorn
+whitenoise[brotli]
+sentry-sdk
+Django==4.0.8 # https://github.com/django-extensions/django-extensions/pull/1796
+django-environ
+django-model-utils
+django-htmx
+argon2-cffi
+django-crispy-forms
+crispy-bootstrap5
+django-forms-dynamic
+psycopg2 --no-binary psycopg2

@@ -1,0 +1,76 @@
+{% raw %}{% load static %}{% endraw %}
+{% raw %}{% load django_htmx %}{% endraw %}
+{% raw %}{% django_htmx_script %}{% endraw %}
+{% raw %}{% load crispy_forms_tags %}{% endraw %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+
+    <title>{% raw %}{% block title %}{% endraw %}{% raw %}{% endblock title %}{% endraw %}</title>
+
+    <script type="module">
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <script type="text/javascript" src="{% raw %}{% static 'js/jquery.min.js' %}{% endraw %}" defer></script>
+    <script type="text/javascript" src="{% raw %}{% static 'js/bootstrap.bundle.min.js' %}{% endraw %}" defer></script>
+    <script type="text/javascript" src="{% raw %}{% static 'js/htmx.min.js' %}{% endraw %}" async></script>
+
+
+    <link rel="stylesheet" href="{% raw %}{% static 'css/bootstrap.min.css' %}{% endraw %}">
+
+
+    <meta name="description" content="{% raw %}{% block metadescription %}{% endraw %}{% raw %}{% endblock metadescription %}{% endraw %}">
+    <meta name="keywords" content="{% raw %}{% block metakeywords %}{% endraw %}{% raw %}{% endblock metakeywords %}{% endraw %}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% raw %}{% static 'favicon/apple-touch-icon.png' %}{% endraw %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% raw %}{% static 'favicon/favicon-32x32.png' %}{% endraw %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% raw %}{% static 'favicon/favicon-16x16.png' %}{% endraw %}">
+    <link rel="icon" type="image/png" sizes="any" href="{% raw %}{% static 'favicon/favicon.ico' %}{% endraw %}">
+
+
+    {% raw %}{% block extra_head %}{% endraw %}
+    {% raw %}{% endblock %}{% endraw %}
+</head>
+
+{% raw %}{% block header %}{% endraw %}
+{% raw %}{% endblock %}{% endraw %}
+
+<body hx-headers='{"X-CSRFToken": "{% raw %}{{ csrf_token }}{% endraw %}"}' id="page-container">
+<main id="main">
+
+    {% raw %}{% block body %}{% endraw %}
+
+        {% raw %}{% block contentwrapper %}{% endraw %}
+            <div class="container-fluid">
+
+                {% raw %}{% block content %}{% endraw %}
+                {% raw %}{% endblock %}{% endraw %}
+
+            </div>
+        {% raw %}{% endblock %}{% endraw %}
+
+    {% raw %}{% endblock body %}{% endraw %}
+
+    {% raw %}{% block extra_body %}{% endraw %}
+    {% raw %}{% endblock %}{% endraw %}
+
+    <script>
+        document.body.addEventListener('htmx:configRequest', (event) => {
+            event.detail.headers['X-CSRFToken'] = '{% raw %}{{ csrf_token }}{% endraw %}';
+        })
+    </script>
+</main>
+
+{% raw %}{% block footer %}{% endraw %}
+{% raw %}{% endblock %}{% endraw %}
+</body>
+</html>

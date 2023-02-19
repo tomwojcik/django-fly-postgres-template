@@ -1,0 +1,9 @@
+ipdb
+coverage
+pre-commit
+factory_boy
+django-debug-toolbar
+django-extensions
+pip-tools
+Werkzeug
+django-silk

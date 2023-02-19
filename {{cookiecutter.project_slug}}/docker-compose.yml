@@ -1,0 +1,37 @@
+version: "3.8"
+
+
+services:
+    web:
+        command: [ 'sh', './entrypoint-dev.sh' ]
+        build:
+            dockerfile: Dockerfile
+            context: .
+            target: development
+        restart: unless-stopped
+        depends_on:
+            - db
+        tty: true
+        env_file:
+            - .env.dev
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./src:/opt/app/:cached
+    db:
+        image: postgres:12.5
+        command: -c fsync=off
+        restart: unless-stopped
+        env_file:
+            - .env.dev
+        environment:
+            POSTGRES_HOST: ${POSTGRES_HOST:-db}
+            POSTGRES_PORT: ${POSTGRES_PORT:-5432}
+            POSTGRES_DB: ${POSTGRES_DB:-django_db}
+            POSTGRES_USER: ${POSTGRES_USER:-django_user}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-django_password}
+        volumes:
+            - db-data:/var/lib/postgresql/data:delegated
+
+volumes:
+    db-data:

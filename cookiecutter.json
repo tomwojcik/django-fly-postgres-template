@@ -1,0 +1,7 @@
+{
+    "project_name": "My Fly App",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "_extensions": [
+        "cookiecutter.extensions.RandomStringExtension"
+    ]
+}

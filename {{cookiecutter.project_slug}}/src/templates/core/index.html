@@ -1,0 +1,59 @@
+{% raw %}{% extends "_main_body.html" %}{% endraw %}
+{% raw %}{% load static %}{% endraw %}
+
+{% raw %}{% block title %}{% endraw %} Index {% raw %}{% endblock title %}{% endraw %}
+
+{% raw %}{% block content %}{% endraw %}
+
+    <section class="py-5">
+        <div class="container text-center">
+            <strong>Lorem Ipsum</strong>
+            <h1 class="display-4 my-3">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit</h1>
+            <a class="btn btn-link my-2" href="#">Read more »</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4" contenteditable="false">Lorem ipsum dolor sit amet</h2>
+            <p class="lead mb-5" contenteditable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div>
+                <div class="row align-items-center text-md-left mb-5">
+                    <div class="col-md-6 order-1 order-md-0">
+                        <img class="img-fluid" src="{% raw %}{% static 'images/placeholder.svg' %}{% endraw %}"
+                             alt=""></div>
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <span class="display-3 mb-2">01</span>
+                        <h3 class="mb-4">Lorem Ipsum</h3>
+                        <p contenteditable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis
+                            at massa vel tincidunt.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center text-md-right mb-5">
+                    <div class="col-md-6 order-1">
+                        <img class="img-fluid" src="{% raw %}{% static 'images/placeholder.svg' %}{% endraw %}"
+                             alt=""></div>
+                    <div class="col-md-6 mb-4 mb-md-0 order-0">
+                        <span class="display-3 mb-2">02</span>
+                        <h3 class="mb-4">Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis at massa vel
+                            tincidunt.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center text-md-left mb-5">
+                    <div class="col-md-6 order-1 order-md-0">
+                        <img class="img-fluid" src="{% raw %}{% static 'images/placeholder.svg' %}{% endraw %}"
+                             alt=""></div>
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <span class="display-3 mb-2">03</span>
+                        <h3 class="mb-4">Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis at massa vel
+                            tincidunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% raw %}{% endblock content %}{% endraw %}
