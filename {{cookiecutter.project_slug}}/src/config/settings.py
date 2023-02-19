@@ -171,9 +171,14 @@ DATABASES = {
         'PASSWORD': POSTGRES_PASSWORD,
         'HOST': POSTGRES_HOST,
         'PORT': POSTGRES_PORT,
-        'OPTIONS': {'sslmode': 'require'},
     }
 }
+
+# good practice. Remove if you can't meet the criteria
+if not IS_DEV_ENV:
+    DATABASES['default']['OPTIONS'] = {'sslmode': 'require'},
+
+
 
 # https://docs.djangoproject.com/en/4.1/topics/cache/#local-memory-caching
 CACHES = {
