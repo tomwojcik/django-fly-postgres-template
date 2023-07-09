@@ -4,10 +4,7 @@ Start with creating a PostgresDB. DB providers I suggest:
 1. Fly.io - [howto](https://fly.io/docs/postgres/getting-started/create-pg-cluster/)
 * has a free tier, but requires a "free app slot" (which you can have up to 3)
 * [this is NOT a managed Postgres](https://web.archive.org/web/20230219115111/https://fly.io/docs/postgres/getting-started/what-you-should-know/). Probably good enough for your side projects, but not production ready
-2. Bit.io
-* has a free tier
-* their pricing is slightly confusing but for many side projects it will stay free for a long time, and then you pay as you go
-3. Supabase.com
+2. Supabase.com
 * has a free tier
 * very scalable and production ready if you're willing to pay
 
