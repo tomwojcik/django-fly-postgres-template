@@ -93,7 +93,7 @@ pyyaml==6.0
     # via pre-commit
 six==1.16.0
     # via python-dateutil
-sqlparse==0.4.3
+sqlparse==0.4.4
     # via
     #   django
     #   django-debug-toolbar
