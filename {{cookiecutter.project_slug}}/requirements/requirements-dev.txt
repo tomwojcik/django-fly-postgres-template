@@ -92,7 +92,9 @@ python-dateutil==2.8.2
 pyyaml==6.0
     # via pre-commit
 six==1.16.0
-    # via python-dateutil
+    # via
+    #   asttokens
+    #   python-dateutil
 sqlparse==0.4.3
     # via
     #   django
@@ -114,7 +116,7 @@ virtualenv==20.19.0
     # via pre-commit
 wcwidth==0.2.6
     # via prompt-toolkit
-werkzeug==2.2.3
+werkzeug==3.0.1
     # via -r requirements-dev.in
 wheel==0.38.4
     # via pip-tools
