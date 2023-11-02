@@ -26,7 +26,7 @@ decorator==5.1.1
     #   ipython
 distlib==0.3.6
     # via virtualenv
-django==4.1.10
+django==4.1.13
     # via
     #   django-debug-toolbar
     #   django-extensions
@@ -92,7 +92,9 @@ python-dateutil==2.8.2
 pyyaml==6.0
     # via pre-commit
 six==1.16.0
-    # via python-dateutil
+    # via
+    #   asttokens
+    #   python-dateutil
 sqlparse==0.4.3
     # via
     #   django

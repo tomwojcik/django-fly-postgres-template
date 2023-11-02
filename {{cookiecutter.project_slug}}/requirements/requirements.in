@@ -1,7 +1,7 @@
 gunicorn
 whitenoise[brotli]
 sentry-sdk
-Django==4.1.10 # https://github.com/django-extensions/django-extensions/pull/1796
+Django==4.1.13 # https://github.com/django-extensions/django-extensions/pull/1796
 django-environ
 django-model-utils
 django-htmx
