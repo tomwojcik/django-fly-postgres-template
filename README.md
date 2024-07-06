@@ -10,7 +10,7 @@ Start with creating a PostgresDB. DB providers I suggest:
 
 ### How to use
 
-Last I checked, Jinja2 didn't work well with Python3.11. Use any lower Python version.
+Tested on Python 3.7-3.11.
 
 ```shell
 $ pip install -U cookiecutter jinja2
